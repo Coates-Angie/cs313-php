@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade&display=swap');
+html {
+    background-color: blueviolet;
+    background-size: cover;
+}
+
+body {
+    height: 100%;
+    font-size: 48px;
+    line-height: 32px;
+    font-family: 'Bungee Shade', cursive;
+    color: whitesmoke;
+    margin: 5rem auto;
+    max-width: 900px;
+    text-align: center;
+}
