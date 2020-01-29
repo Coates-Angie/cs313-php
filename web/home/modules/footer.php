@@ -1,0 +1,1 @@
+ <p>&#169; 2019- Angie Coates- Utah - <a href="http://www.byui.edu/online">BYU-Idaho</a></p>

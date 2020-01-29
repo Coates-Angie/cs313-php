@@ -1,0 +1,207 @@
+    @import url('https://fonts.googleapis.com/css?family=Acme|Montserrat&display=swap');
+    * {
+        box-sizing: border-box;
+    }
+
+    html {
+        background-color: #e2e2e4;
+    }
+
+    body {
+        background-color: white;
+        max-width: 75%;
+        margin: auto;
+        border: 1px solid #333;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+        font-family: 'Acme', sans-serif;
+        font-size: 24px;
+        color: #333;
+    }
+
+    h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        color: #868696;
+    }
+
+    h3 {
+        font-family: 'Acme', sans-serif;
+        font-size: 16px;
+        color: #333;
+    }
+
+    p {
+        font-family: 'Montserrat', sans-serif;
+        color: #333;
+    }
+    /***********HEADER*************/
+
+    header {
+        padding-top: 20px;
+    }
+
+    header h1 {
+        font-size: 32px;
+        font-family: 'Acme', sans-serif;
+        text-align: center;
+        color: #333;
+    }
+
+    header h2 {
+        font-size: 18px;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        color: #333;
+    }
+
+    #palmTree {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /***********NAVIGATION***********/
+
+    ul.show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    ul.hide {
+        display: none;
+    }
+
+    nav button {
+        position: absolute;
+        top: .5rem;
+        right: 14%;
+        background-color: #E8D7CE;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        padding: 0;
+        width: 100%;
+        background-color: #333;
+    }
+
+    nav ul li {
+        float: left;
+    }
+
+    nav ul li a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: auto;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    nav ul li a:hover {
+        color: #333333;
+        background-color: #E8D7CE;
+    }
+
+    nav ul li a.active {
+        background-color: #868696;
+    }
+    /*small*/
+
+    @media screen and (max-width: 600px) {
+        ul li.right,
+        ul li {
+            float: none;
+        }
+
+    }
+    /*medium*/
+
+    @media only screen and (min-width: 37.7em) {
+        nav ul {
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        nav ul li {
+            width: 100%;
+        }
+        nav ul li a {
+            width: auto;
+        }
+        /*Nav button*/
+        nav button {
+            display: none;
+        }
+        nav ul.hide {
+            display: flex;
+        }
+    }
+    /*large*/
+
+    @media only screen and (min-width: 64em) {
+        nav button {
+            display: none;
+        }
+        nav ul li a {
+            width: auto;
+        }
+    }
+    /* Column container */
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    /* Create two unequal columns that sits next to each other */
+    /* Sidebar/left column */
+
+    .main {
+        flex: 20%;
+        background-color: #E8D7CE;
+        padding: 20px;
+
+    }
+    /* Main column */
+
+    .side {
+        flex: 60%;
+        background-color: white;
+        padding: 20px;
+    }
+    /* Fake image, just for this example */
+
+    .photos {
+        width: 100%;
+    }
+
+    #ocean {
+        width: 100%;
+    }
+
+    #belize {
+        width: 100%;
+    }
+    /* Footer */
+
+    .footer {
+        padding: 5px;
+        text-align: center;
+        background: #333;
+        color: whitesmoke;
+    }
+
+    .footer a {
+        color: #E8D7CE;
+    }
+
+    .footer p {
+        color: #868696;
+    }
