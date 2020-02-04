@@ -13,7 +13,7 @@ CREATE TABLE Stix.Customers
 CREATE TABLE Stix.Wallet
 (
 Wall_id SERIAL NOT NULL PRIMARY KEY,
-Cust_id INT NOT NULL REFERENCES Customers(Customer_id),
+Cust_id INT NOT NULL REFERENCES Stix.Customers(Customer_id),
 CreditCardNum INT NOT NULL,
 ExpDate DATE NOT NULL, 
 CVC INT NOT NULL
@@ -25,10 +25,10 @@ CREATE TABLE Stix.Item
   Item_name VARCHAR(50) NOT NULL UNIQUE,
   Item_Description TEXT NOT NULL,
   Item_category VARCHAR (30) NOT NULL,
-  Item_Image image NOT NULL,
-  Item_Thumb image NOT NULL,
   Item_Quantity INT NOT NULL,
   Item_Price VARCHAR NOT NULL
+  /*Item_Image image NOT NULL,
+  Item_Thumb image NOT NULL,*/
 );
 
 
